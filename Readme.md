@@ -15,4 +15,3 @@ Later this data is loaded into the GAN model for training.
 
 ### Results:
 the results and the model get automatically generated into the root folder.
-![image](https://user-images.githubusercontent.com/65805742/186213355-042b04a1-30ac-4fa3-975e-43b18920aafe.png)
