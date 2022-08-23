@@ -1,26 +1,18 @@
-T1 -T2 Airway & Brain MRI synthetic Image generation using cycle GAN
+# T1-T2 weighted synthetic image generation using CycleGAN
+### project description: 
+T2 is comparatively slower to acquire than T1 but, contains more features useful for classification/ segmentation. In this project, we implement [CycleGAN](https://junyanz.github.io/CycleGAN/) to generate synthetic T2 images from T1 weighted images without compromising speed and image quality. For demonstration, tow datasets are used: inhouse airway dataset, [Brats](https://www.med.upenn.edu/sbia/brats2018/data.html) (open-sourced) dataset
 
-Step 0 : Setup
-
-The conda eviornment for this project can be setup using the requirement.txt file.
-
-Step 1 : Preprocessing
-
-The Raw data we have is in Dicom format. So it needs to be sliced and staked on different set of folders. 
-The preprocessing code is indipendently used to slice and store the images.Convert the raw dicom file using readDicomImages
-The code have essesntial steps to convert the Dicom to images and to save them into specific folders.
-
-Step 2 : Data
-
+### Dataset:
 A sample dataset is provided with this code in data folder. The sample data contain T2 and T1 examples from brain MRI dataset.
-The path towards dataset is provided in configuration/config.py file. Only this path need to be changed when running on a
-custom dataset
+The dataset directory is provided in `/configuration/config.py`.
 
-Step 3 : Model Training
+### Preprocessing:
+The Raw data we have is in Dicom format. So it needs to be sliced and staked on different set of folders. The preprocessing code is indipendently used to slice and store the images.Convert the raw dicom file using `/preprocessing/readDicomImages.ipynb`. The code have essesntial steps to convert the Dicom to images and to save them into specific folders.
 
-The model can be trained using demo.ipynb code. On running the code the data is extracted and converted into a numpy file.
-Later this data is loaded into the gan model for training.
+### Model Training:
+The model can be trained using `demo.ipynb`. On running the code the data is extracted and converted into a numpy file.
+Later this data is loaded into the GAN model for training.
 
-Step 4 : Results
-
-the results get automatically generated into the root folder including the model.
+### Results:
+the results and the model get automatically generated into the root folder.
+![image](https://user-images.githubusercontent.com/65805742/186213355-042b04a1-30ac-4fa3-975e-43b18920aafe.png)
