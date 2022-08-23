@@ -1,7 +1,10 @@
 # T1-T2 weighted synthetic image generation using CycleGAN
 ### project description: 
 T2 is comparatively slower to acquire than T1 but, contains more features useful for classification/ segmentation. In this project, we implement [CycleGAN](https://junyanz.github.io/CycleGAN/) to generate synthetic T2 images from T1 weighted images without compromising speed and image quality. For demonstration, tow datasets are used: inhouse airway dataset, [Brats](https://www.med.upenn.edu/sbia/brats2018/data.html) (open-sourced) dataset
-
+### Documentation:
+project proposal: [dlproject_proposal_2021.pdf
+](https://github.com/Wahid-Alam/Interconverting-T1w-to-T2w-in-MRI-using-CycleGAN/blob/master/dlproject_proposal_2021.pdf) <br/>
+final report: [ISE_6380_0001_Spr21_Project_Final_Report.pdf](https://github.com/Wahid-Alam/Interconverting-T1w-to-T2w-in-MRI-using-CycleGAN/blob/master/ISE_6380_0001_Spr21_Project_Final_Report.pdf)
 ### Dataset:
 A sample dataset is provided with this code in data folder. The sample data contain T2 and T1 examples from brain MRI dataset.
 The dataset directory is provided in `/configuration/config.py`.
